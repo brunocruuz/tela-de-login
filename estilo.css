@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.tipo{
+    background: url(/foto2.jpg) ;
+    background-size: cover;
+    height: 100vh; 
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+h1{
+    color: white;
+    text-align: center;
+    margin: 20px;
+    
+}
+.container{
+    background: rgba(0, 0, 0, 0.692);
+    width: 300px;
+    
+    border-radius: 20% 0;
+    box-shadow: 1px 2px 10px rgb(64, 25, 90), 3px 6px 20px rgb(53, 18, 70) ;
+    height: 400px;
+    padding: 50px 20px;
+
+}
+input{
+    width: 100%;
+   height: 46px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: white 1px solid;
+    color:white;
+}
+.input-field{
+    position: relative;
+    margin-bottom: 20px;
+}
+label{
+    position: absolute;
+    color: rgb(239, 250, 239);
+    top: 0;
+    left: 0;
+    transform: translateY(18px);
+    transition:  .25s ease-in-out;
+}
+input:focus{
+    border-bottom: green 2px solid;
+    box-shadow: green 0 1px 0 0 ;
+}
+input:focus + label{
+ transform: translateY(-14px) scale(.8);
+ color: green;
+ font-weight: 900;
+}
+input:not(:placeholder-shown) + label {
+    transform: translateY(-14px) scale(.8);
+    color: green;
+    font-weight: 900;
+}
+input:not(:placeholder-shown){
+    border-bottom: green 2px solid;
+    box-shadow: green 0 1px 0 0 ;
+}
+button{
+    padding: 15px 50px;
+    margin: 20px;
+    background: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+button:hover{
+    background-color: rgba(212, 16, 16, 0.432);
+}
